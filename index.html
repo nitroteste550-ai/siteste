@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafiti VerdeVermelho</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins">
+    <custom-navbar></custom-navbar>
+    
+    <main class="min-h-screen relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="h-full w-1/2 absolute left-0 bg-gradient-to-r from-red-600 to-red-800"></div>
+            <div class="h-full w-1/2 absolute right-0 bg-gradient-to-l from-green-600 to-green-800"></div>
+        </div>
+
+        <div class="relative z-10 container mx-auto px-4 py-20">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-green-400">
+                    GRAFITI<br>URBANO
+                </h1>
+                <p class="text-xl text-white max-w-2xl mx-auto">
+                    Arte que transforma a cidade em uma tela vibrante de expressão criativa.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl border border-white border-opacity-20">
+                    <h2 class="text-2xl font-semibold text-white mb-4">Vermelho</h2>
+                    <p class="text-white text-opacity-80">Paixão, energia e revolução nas paredes da cidade.</p>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg p-8 rounded-xl border border-white border-opacity-20">
+                    <h2 class="text-2xl font-semibold text-white mb-4">Verde</h2>
+                    <p class="text-white text-opacity-80">Crescimento, renovação e harmonia com o urbano.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-0 right-0 z-10">
+            <div class="flex justify-center space-x-4">
+                <a href="#" class="social-btn bg-green-600 hover:bg-green-700">
+                    <i data-feather="instagram"></i>
+                </a>
+                <a href="#" class="social-btn bg-green-600 hover:bg-green-700">
+                    <i data-feather="link"></i>
+                </a>
+                <a href="#" class="social-btn bg-green-600 hover:bg-green-700">
+                    <i data-feather="message-circle"></i>
+                </a>
+                <a href="#" class="social-btn bg-green-600 hover:bg-green-700">
+                    <i data-feather="help-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Grafiti elements -->
+        <div class="grafiti-element grafiti-1">ART</div>
+        <div class="grafiti-element grafiti-2">FREE</div>
+        <div class="grafiti-element grafiti-3">TAG</div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+                  </html>
