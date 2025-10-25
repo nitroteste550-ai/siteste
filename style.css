@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-btn {
+    @apply w-12 h-12 rounded-full flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110;
+}
+
+.grafiti-element {
+    position: absolute;
+    color: white;
+    opacity: 0.1;
+    font-size: 6rem;
+    font-weight: 700;
+    z-index: 1;
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+.grafiti-1 {
+    top: 15%;
+    left: 10%;
+}
+
+.grafiti-2 {
+    top: 40%;
+    right: 15%;
+}
+
+.grafiti-3 {
+    bottom: 20%;
+    left: 20%;
+}
+
+@media (max-width: 768px) {
+    .grafiti-element {
+        font-size: 4rem;
+    }
+    
+    .grafiti-1 {
+        top: 10%;
+        left: 5%;
+    }
+    
+    .grafiti-2 {
+        top: 35%;
+        right: 5%;
+    }
+    
+    .grafiti-3 {
+        bottom: 15%;
+        left: 10%;
+    }
+}
